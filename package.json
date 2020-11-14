@@ -61,12 +61,6 @@
     "release-it": "^13.5.7",
     "svgexport": "^0.4.0"
   },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "yarn lint && yarn flow"
-    }
-  },
   "jest": {
     "preset": "react-native",
     "cacheDirectory": "./cache/jest",

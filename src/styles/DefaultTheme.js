@@ -1,23 +1,23 @@
 /* @flow */
 import color from 'color';
-import * as colors from './colors';
+import { BasicColors, LightColors } from './colors';
 import type { Theme } from '../types/Theme';
 
 /**
  * Default Theme
  */
 const DefaultTheme: Theme = {
-  primaryColor: colors.blue,
-  primaryLightColor: color(colors.blue).lighten(0.5).string(),
-  disabledColor: color(colors.blue).lighten(0.8).string(),
-  backgroundColor: colors.white,
-  barColor: colors.greyL2,
-  dividerColor: colors.grey,
-  textColor: colors.black,
-  placeholderColor: colors.greyD1,
-  footnoteColor: colors.greyD1,
-  footnoteBackgroundColor: colors.greyL1,
-  positiveColor: colors.green,
+  primaryColor: LightColors.blue,
+  primaryLightColor: color(LightColors.blue).lighten(0.5).string(),
+  disabledColor: LightColors.gray,
+  backgroundColor: BasicColors.white,
+  barColor: LightColors.gray6,
+  dividerColor: LightColors.gray3,
+  textColor: LightColors.black,
+  placeholderColor: LightColors.gray2,
+  footnoteColor: LightColors.gray2,
+  footnoteBackgroundColor: LightColors.gray5,
+  positiveColor: LightColors.green,
 };
 
 export default DefaultTheme;
