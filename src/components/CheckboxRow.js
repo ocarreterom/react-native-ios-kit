@@ -19,8 +19,8 @@ class CheckboxRow extends React.Component<Props> {
     if (selected) {
       return (
         <Icon
-          name="ios-checkmark"
-          size={34}
+          name="checkmark"
+          size={22}
           color={theme.primaryColor}
           theme={theme}
         />
