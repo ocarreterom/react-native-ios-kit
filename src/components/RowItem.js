@@ -88,7 +88,7 @@ class RowItem extends React.Component<Props> {
             },
           ]}
         >
-          {!!title && <Body numberOfLines={1}>{title}</Body>}
+          {!!title && <Body numberOfLines={1} style={styles.title}>{title}</Body>}
           {subtitle && <Caption1 numberOfLines={1}>{subtitle}</Caption1>}
         </View>
         {this.renderRight()}
@@ -139,13 +139,18 @@ const styles = StyleSheet.create({
   },
   titleWrapper: {
     flexShrink: 1,
+    flexGrow: 0,
     flexDirection: 'column',
     justifyContent: 'center',
+  },
+  title: {
+    minWidth: 50,
   },
   separator: {
     height: StyleSheet.hairlineWidth,
   },
   rightComponent: {
+    flexShrink: 1,
     flexGrow: 1,
     alignItems: 'flex-end',
   },
